@@ -18,6 +18,12 @@ Frontend is created using SvelteJS
 - Svelte-routing is used to manage all the routes.
 - Svelte store is used to manage different states of the application
 
+##### Note
+
+In frontend side of the things you need to add .env file with two variables of
+URL=http://localhost:port
+CLOUDINARY_API=your cloudinary public key
+
 ### To get started
 
 ```shell
