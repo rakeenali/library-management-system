@@ -1,0 +1,22 @@
+// CREATE ACCOUNT
+# POST http://localhost:5000/admin/register
+# content-type: application/json
+
+# {
+#     "email": "rakeen@gmail.com",
+#     "password": "hunter"
+# }
+
+// LOGIN INTO YOUR ACCOUNT
+# POST http://localhost:5000/admin
+# content-type: application/json
+
+# {
+#     "email": "rakeen@gmail.com",
+#     "password": "hunter"
+# }
+
+
+// GIVES ALL INFO OF ADMIN AND ALL THE BOOK HE HAS CREATED
+GET http://localhost:5000/admin
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjkzMzUwNTEsIm5iZiI6MTU2OTMzNTA1MSwianRpIjoiMjAzM2NiYTctMjcyNi00NTZmLWFiMGMtMDI2OWM1Mzk0OGEzIiwiZXhwIjoxNTY5NzY3MDUxLCJpZGVudGl0eSI6InJha2VlbkBnbWFpbC5jb20iLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MifQ.xzOy3143Q5PTqNiUzPoCDELeEI6RoFetqnNmMxvsxoo

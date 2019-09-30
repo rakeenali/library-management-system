@@ -1,0 +1,5 @@
+Pipfile.lock
+migrations
+app.db
+.vscode
+__pycache__

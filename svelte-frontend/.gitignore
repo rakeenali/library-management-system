@@ -1,0 +1,6 @@
+.DS_Store
+node_modules
+public/bundle.*
+.env
+info.txt
+package-lock.json

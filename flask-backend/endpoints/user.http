@@ -1,0 +1,21 @@
+// CREATE USERS ACCOUNT
+# POST http://localhost:5000/user/register
+# content-type: application/json
+
+# {
+#     "username": "zain",
+#     "password": "hunter"
+# }
+
+# // LOGIN TO USERS ACCOUNT
+POST http://localhost:5000/user
+content-type: application/json
+
+{
+    "username": "rakeen",
+    "password": "hunter"
+}
+
+// LOGGED IN USERS INFO
+GET http://localhost:5000/user
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1Njk2NTI4MzQsIm5iZiI6MTU2OTY1MjgzNCwianRpIjoiZmIxM2Q0OGItYzA0YS00NmYwLWIyN2EtMWVjODU4NWJmMzk5IiwiZXhwIjoxNTcwMDg0ODM0LCJpZGVudGl0eSI6InJha2VlbiIsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyJ9.qE2CH4Uq0O8kHb87ZpThyf6IS0PblPDUGA4rpKwGG28

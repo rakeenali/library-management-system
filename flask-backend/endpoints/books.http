@@ -1,0 +1,33 @@
+// CREATE A BOOK
+# POST http://localhost:5000/book
+# content-type: application/json
+# Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjkzMzE0NjUsIm5iZiI6MTU2OTMzMTQ2NSwianRpIjoiMTVmMWEzZTUtNTgxOC00YzBmLWI2ZDEtNWEyNWNhZDE3ZjhlIiwiZXhwIjoxNTY5NzYzNDY1LCJpZGVudGl0eSI6InJha2VlbkBnbWFpbC5jb20iLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MifQ.L1XQV77vqdLP1piSeuEqD7PveH2zG4V680bU4D4pvyE
+
+# {
+#     "title": "Book 10",
+#     "description": "This book is written by Nicholas Sparks",
+#     "rent_price": "3",
+#     "quantity": "1"
+# }
+
+
+// ALL THE BOOKS
+GET http://localhost:5000/book
+
+// BOOK WITH ID
+GET http://localhost:5000/book/e9695c64585e45b58dd6ec73502b9d6d
+
+
+// CHANGE BOOKS QUANTITY
+POST http://localhost:5000/book/6fa4ad4c
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjkwNzMwNjQsIm5iZiI6MTU2OTA3MzA2NCwianRpIjoiZTQ2NmMzYTUtMWNjZS00NTNiLWFkODktMDk5ODdjMjczMWYzIiwiZXhwIjoxNTY5NTA1MDY0LCJpZGVudGl0eSI6InJha2VlbkBnbWFpbC5jb20iLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MifQ.FGq3NTy3oRl9v08O8hXoSr8DErLfGXiWMHfmnAKA3KA
+
+{
+    "quantity":"10"
+}
+
+// DELETE BOOK
+DELETE http://localhost:5000/book/b163b2c2
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjkwNzMwNjQsIm5iZiI6MTU2OTA3MzA2NCwianRpIjoiZTQ2NmMzYTUtMWNjZS00NTNiLWFkODktMDk5ODdjMjczMWYzIiwiZXhwIjoxNTY5NTA1MDY0LCJpZGVudGl0eSI6InJha2VlbkBnbWFpbC5jb20iLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MifQ.FGq3NTy3oRl9v08O8hXoSr8DErLfGXiWMHfmnAKA3KA

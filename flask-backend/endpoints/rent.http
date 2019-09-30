@@ -1,0 +1,33 @@
+// RENT A BOOK
+# POST http://localhost:5000/user/rent-book/9f25a5f796
+# content-type: application/json
+# Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1Njk2NTI4MzQsIm5iZiI6MTU2OTY1MjgzNCwianRpIjoiZmIxM2Q0OGItYzA0YS00NmYwLWIyN2EtMWVjODU4NWJmMzk5IiwiZXhwIjoxNTcwMDg0ODM0LCJpZGVudGl0eSI6InJha2VlbiIsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyJ9.qE2CH4Uq0O8kHb87ZpThyf6IS0PblPDUGA4rpKwGG28
+
+// GET RENTED BOOK INFO
+# GET http://localhost:5000/user/rent-book/994cfdac9e
+# Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjkzMzE1NjYsIm5iZiI6MTU2OTMzMTU2NiwianRpIjoiMDk4NzE2MGQtOTM4Ny00M2UyLWJkZGMtNTQ4ZDBlY2E1ZDc2IiwiZXhwIjoxNTY5NzYzNTY2LCJpZGVudGl0eSI6InJha2VlbiIsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyJ9.LVwRdGbvi4VwjhTLlN1qcTwIXLPkqOyccrHKtXWIP1E
+
+// GIVE CARD INFO
+# POST http://localhost:5000/user/rent-token
+# content-type: application/json
+# Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjkzMzE1NjYsIm5iZiI6MTU2OTMzMTU2NiwianRpIjoiMDk4NzE2MGQtOTM4Ny00M2UyLWJkZGMtNTQ4ZDBlY2E1ZDc2IiwiZXhwIjoxNTY5NzYzNTY2LCJpZGVudGl0eSI6InJha2VlbiIsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyJ9.LVwRdGbvi4VwjhTLlN1qcTwIXLPkqOyccrHKtXWIP1E
+
+# {
+#     "number": "4242424242424242",
+#     "exp_month": "10",
+#     "exp_year": "2020",
+#     "cvc": "123"
+# }
+
+# POST http://localhost:5000/user/rent-charge/9f25a5f796
+# content-type: application/json
+# Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjkzMzE1NjYsIm5iZiI6MTU2OTMzMTU2NiwianRpIjoiMDk4NzE2MGQtOTM4Ny00M2UyLWJkZGMtNTQ4ZDBlY2E1ZDc2IiwiZXhwIjoxNTY5NzYzNTY2LCJpZGVudGl0eSI6InJha2VlbiIsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyJ9.LVwRdGbvi4VwjhTLlN1qcTwIXLPkqOyccrHKtXWIP1E
+
+# {
+#     "token": "tok_1FNiCfEhDrxWsd2IEnsAFQMW"
+# }
+
+
+
+GET http://localhost:5000/user/rent/detail
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1Njk3Njk3NDgsIm5iZiI6MTU2OTc2OTc0OCwianRpIjoiNTA4MzFiNjEtMjRlOC00MTdjLTlmMGQtY2FjNjU2ZTNjMDE1IiwiZXhwIjoxNTcwMjAxNzQ4LCJpZGVudGl0eSI6InJha2VlbiIsImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyJ9.Fe-YUvpCpbL3Wf8vScYZlxNPy7cY3dqycuwiYZ_2Hw4
