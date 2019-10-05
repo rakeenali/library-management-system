@@ -12,6 +12,6 @@ class Config(object):
     JWT_SECRET_KEY = os.environ.get("SECRET_KEY") or "you-will-never-guess"
     PER_DAY_FINE = os.environ.get('PER_DAY_FINE') or 0.5
     STRIPE_PUBLIC_KEY = os.environ.get(
-        'STRIPE_PUBLIC_KEY') or '[Your stripe public key]'
+        'STRIPE_PUBLIC_KEY') or 'pk_test_KP9YBIwVmwyp9ijrTytHoeWP'
     STRIPE_PRIVATE_KEY = os.environ.get(
-        'STRIPE_PRIVATE_KEY') or '[Your stripe private key]'
+        'STRIPE_PRIVATE_KEY') or 'sk_test_MEyd2yiRAlMySNFfUFxU4nQ2'

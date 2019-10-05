@@ -67,4 +67,24 @@ flask shell
 
 ## React Native app
 
-React native interface for user side is coming soon
+Native solution is developed using React Native for both Android and IOS
+
+##### Note
+
+In order for application to work you need to host the backend on some kind of service.
+I personally used localltunnel but ngrok should also work fine. Because
+
+```
+# first start the flask server using
+
+cd flask-backend
+flask run
+
+# then in a new terminal tab type
+npx localtunnel --port {port of the flask app}
+
+# then move in to the native folder
+
+npm install
+npm start
+```

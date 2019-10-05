@@ -1,11 +1,11 @@
 // CREATE USERS ACCOUNT
-# POST http://localhost:5000/user/register
-# content-type: application/json
+POST http://localhost:5000/user/register
+content-type: application/json
 
-# {
-#     "username": "zain",
-#     "password": "hunter"
-# }
+{
+    "username": "zain",
+    "password": "hunter"
+}
 
 # // LOGIN TO USERS ACCOUNT
 POST http://localhost:5000/user
